@@ -1,12 +1,42 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Onetech-Information as a service</title>
+  <title>My Portfolio</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script>
+    $(document).ready(function(){
+      $(".project").hide();
+      $(".section-header").click(function(){
+        $(this).siblings(".project").slideToggle();
+      });
+    });
+  </script>
 </head>
 <body>
-    <p>Information as a service!</p>
+  <header>
+    <h1>My Portfolio</h1>
+  </header>
+  <main>
+    <section>
+      <h2 class="section-header">About Me</h2>
+      <p>As a fresh graduate, I am eager to apply the knowledge and skills I have gained through my studies to a professional setting. I am a hardworking and dedicated individual with a strong desire to learn and grow within my field. I am a quick learner and thrive in fast-paced and dynamic environments. I am a team player, with strong communication and interpersonal skills, and I am confident that I can make a valuable contribution to any organization. I am excited to embark on the next chapter of my career and am open to new opportunities and challenges.</p>
+    </section>
+    <section>
+      <h2 class="section-header">Projects</h2>
+      <div class="project">
+        <h3 class="project-header">Project 1</h3>
+        <p class="project-description">
+          [Project 1 Description]
+        </p>
+      </div>
+      <div class="project">
+        <h3 class="project-header">Project 2</h3>
+        <p class="project-description">
+          [Project 2 Description]
+        </p>
+      </div>
+    </section>
+  </main>
 </body>
 </html>
