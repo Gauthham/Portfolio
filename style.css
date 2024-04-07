@@ -1,47 +1,42 @@
+/* styles.css */
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-  }
-  
-  header {
-    background-color: #333;
-    color: #fff;
-    padding: 1em;
-    text-align: center;
-  }
-  
-  main {
-    padding: 1em;
-  }
-  
-  h1, h2, h3 {
-    margin: 0;
-  }
-  
-  section {
-    margin-bottom: 1em;
-  }
-  
-  .section-header {
-    font-size: 1.5em;
-    font-weight: bold;
-    margin-bottom: 0.5em;
-  }
-  
-  .project {
-    background-color: #f2f2f2;
-    padding: 1em;
-  }
-  
-  .project-header {
-    font-size: 1.25em;
-    font-weight: bold;
-    margin-bottom: 0.5em;
-  }
-  
-  .project-description {
-    font-size: 0.9em;
-    margin-bottom: 0.5em;
-  }
-  
+  background: linear-gradient(90deg, #716cc0, #44373a);
+}
+
+.unique-navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #333;
+  color: white;
+  padding: 10px 20px;
+}
+
+.logo {
+  font-size: 24px;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  margin: 10px;
+  padding: 2;
+}
+
+.nav-links li {
+  margin-right: 20px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: white;
+  transition: color 0.3s;
+}
+
+.nav-links a:hover {
+  color: #ff9900;
+}s
+
+.footer{
+  align-items: center;
+}
